@@ -1,4 +1,5 @@
 import 'package:doit_chap13_fb/firebase_options.dart';
+import 'package:doit_chap13_fb/memo_page.dart';
 import 'package:doit_chap13_fb/tabs_page.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,11 +25,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      home: MemoPage(),
       // home: const MyHomePage(),
-      home: FirebaseApp(
-        analytics: analytics,
-        observer: observer,
-      ),
+      // home: FirebaseApp(
+      //   analytics: analytics,
+      //   observer: observer,
+      // ),
     );
   }
 }
